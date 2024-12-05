@@ -1,0 +1,57 @@
+ .form__group{ 
+    margin-bottom: 15px; 
+}
+
+.form__group > label:first-of-type{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__control {
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+    resize: none;
+}
+
+.form_group—-dark > label:first-of-type,
+
+.form_group--dark .form_control::placeholder{ 
+    color: #fff; 
+}
+
+.form_group--dark .form_control{
+    background: transparent;
+    border: solid 1px #fff;
+    color: #fff;
+}
+
+.form_control--checkbox input{
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.form_control--checkbox{
+    display: inline-block;
+}
+
+.form_control--checkbox label{
+    text-decoration: none;
+    padding: 7px 25px;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #404040;
+    margin: 5px 0;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.4s cubic-bezier(0.42, 0, 0.58, 1), background 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1;
+}
+
+.form_control--checkbox input:checked + label{
+    background: #404040;
+    color: #fff;
+}
+     
+    
